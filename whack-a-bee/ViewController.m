@@ -7,23 +7,34 @@
 //
 
 #import "ViewController.h"
+#import "LevelTableViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Dismiss keyboard
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if ([segue.identifier isEqualToString:@"levelSelect"]) {
+        
+        // Set the username in LevelTableViewController
+        LevelTableViewController *controller = segue.destinationViewController;
+        controller.username = self.textField.text;
+    }
 }
+
 
 @end
