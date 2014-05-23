@@ -53,8 +53,7 @@
     
 
     // Get melody URL
-    NSString *melodyFilePath = [[NSBundle mainBundle] pathForResource:@"melody" ofType:@"mp3"];
-    NSURL *melodyFileURL = [NSURL fileURLWithPath:melodyFilePath];
+    NSURL *melodyFileURL = [[NSBundle mainBundle] URLForResource:@"melody" withExtension:@"mp3"];
     
     // Setup player to play melody
     self.backgroundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:melodyFileURL error:nil];
@@ -63,8 +62,7 @@
     
     
     // Get bomb URL
-    NSString *bombFilePath = [[NSBundle mainBundle] pathForResource:@"bomb" ofType:@"mp3"];
-    NSURL *bombFileURL = [NSURL fileURLWithPath:bombFilePath];
+    NSURL *bombFileURL = [[NSBundle mainBundle] URLForResource:@"bomb" withExtension:@"mp3"];
 
     // Setup player to play bomb sound
     self.hitPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:bombFileURL error:nil];
