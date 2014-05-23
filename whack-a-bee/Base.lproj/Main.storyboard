@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Wack A Bee-->
+        <!--View Controller - Whack A Bee-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -44,7 +44,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Wack A Bee" id="I0f-Db-MRk"/>
+                    <navigationItem key="navigationItem" title="Whack A Bee" id="I0f-Db-MRk"/>
                     <connections>
                         <outlet property="startButton" destination="6pU-Gn-NAF" id="Hac-t2-Ka9"/>
                         <outlet property="textField" destination="ZvF-17-HUx" id="amH-ZL-wij"/>

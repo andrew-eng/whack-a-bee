@@ -113,7 +113,8 @@
     button.hidden = YES;
 }
 
-- (IBAction)didTapButton:(id)sender {
+- (IBAction)didTapButton:(id)sender
+{
     
     // Increment score everytime button is tapped.
     self.score++;

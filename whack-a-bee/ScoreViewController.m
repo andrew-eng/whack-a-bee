@@ -27,11 +27,13 @@
     self.navigationItem.hidesBackButton = YES;
 }
 
-- (IBAction)didTapSubmit:(id)sender {
+- (IBAction)didTapSubmit:(id)sender
+{
     
 }
 
-- (IBAction)didTapRestart:(id)sender {
+- (IBAction)didTapRestart:(id)sender
+{
     
     // Pop all the way to the first page
     [self.navigationController popToRootViewControllerAnimated:YES];
